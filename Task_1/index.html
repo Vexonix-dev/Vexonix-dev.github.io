@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Это было удобнее сделать в отдельном файле .css*/
+        h2 {
+            margin-bottom: 0;
+            /* Убрал нижний отступ у h2 */
+        }
+
+        h3 {
+            margin-top: 0;
+            /* Убрал верхний отступ у h3 */
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        a {
+            font-size: 25px;
+        }
+
+        ol {
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Main page</h1><br>
+    <a href="http://kubsu.ru">Абсолютная гиперссылка на глав. страницу КубГУ</a><br>
+    <a href="https://kubsu.ru">Абсолютная гиперссылка на глав. страницу КубГУ (https)</a><br>
+    <a href="image.html" target="_blank"><img src="image.jpg" alt="Здесь должен быть цветочек" width="500"><br></a> 
+        <a href="./internal_page.html">Сокращенная ссылка на внутреннюю страницу</a><br>
+        <a href="#О_странице"> О странице (ссылка на фрагмент текущей страницы)</a><br>
+        <a href="index.html?objdect=ring&material=silver&diameter=50">Кольцо (ссылка с тремя параметрами)</a><br>
+        <a href="current%20directory.html?id=12345">Ссылка с параметром ID в URL</a><br>
+        <a href="current%20directory.html">Относительная ссылка на страницу в текущем каталоге</a><br>
+        <a href="about/about%20directory.html">Относительная ссылка на страницу в каталоге about</a><br>
+        <a href="other/info/info.html">Ссылка на страницу, которая находится в каталоге двумя уровнями ниже</a>
+
+        <h2>
+            Вам заинтересовались Кубанским Государственным Университетом?<br>
+            Предлагаю вам посетить <a href="https://kubsu.ru">главную страницу университета</a> для того, <br>
+            чтобы узнать больше информации о ВУЗе!
+        </h2><br>
+
+        <!--Ссылка на фрагмент страницы стороннего сайта-->
+        <a href="https://en.wikipedia.org/wiki/Computer#History">История возникновения компьютеров</a><br>
+
+        <img src="circleandrect.png" width="500" height="281" alt="circle and rectangle image" usemap="#CaR">
+        <map name="CaR">
+            <area shape="rect" coords="20,64,255,214" href="https://www.kubsu.ru/ru/abiturient" target="_blank"
+                alt="Ссылка в квадрате">
+            <area shape="circle" coords="375,141,100" href="https://cube.nlabs.su/welcome" target="_blank"
+                alt="Ссылка на круг">
+        </map><br>
+
+        <a href="" onclick="return false;">Ссылка с пустым href</a><br>
+        <a onclick="alert('Здравствуйте! Вы нажали на ссылку без href.')">Ссылка без href (сюда можно нажать)</a><br>
+
+        <a href="http://kubsu.ru" rel="nofollow">Ссылка, по которой запрещён переход посковикам</a>
+
+        <h2>Небольшая навигация по сайту КубГУ (нумерованный список ссылок с подписями)</h2>
+        <!--Нумерованный список ссылок с подписями title-->
+        <ol>
+            <li><a href="https://www.kubsu.ru/ru/university" title="Перейти на сайт с информацией о КубГУ"
+                    target="_blank">Информация</a></li>
+            <li><a href="https://www.kubsu.ru/ru/education"
+                    title="Перейти на сайт с информацией по-поводу обучения в КубГУ" target="_blank">Образование</a>
+            </li>
+            <li><a href="https://www.kubsu.ru/ru/abiturient"
+                    title="Перейти на сайт с информацией для абитуриентов КубГУ" target="_blank">Для абитуриентов</a>
+            </li>
+        </ol>
+
+        <h2><a id="О_странице"></a> О странице:</h2>
+        <h3>Страница была создана студентом КубГУ Рубан Никитой Максимовичем</h3>
+
+        <a href="./form.html">Файл на сервере с FTP авторизацией</a>
+
+</body>
+
+</html>
