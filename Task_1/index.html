@@ -89,8 +89,81 @@
         <!--Ссылка на файл на сервере FTP с авторизацией-->
         <a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a>
 
-        <h2>Я вынес форму с полями в отдельную страницу, чтобы было удобнее</h2>
-        <a href="./form.html">ФОРМА С ПОЛЯМИ</a>
+        <h1>Форма HTML</h1>
+
+        <form action = "URL_Отправки_данных" method="POST">
+            
+            <label>
+                Фамилия Имя Отчество<br/>
+                <input type="text" 
+                placeholder="ФИО">
+            </label><br/>
+    
+            <label>
+                Номер телефона<br/>
+                <input type="tel" 
+                placeholder="+7(___)___-__-__">
+            </label><br/>
+    
+            <label>
+                E-mail<br/>
+                <input type="email" 
+                placeholder="e-mail"
+                type="email">
+            </label><br/>
+    
+            <label>
+                Дата:</br>
+                <input name="date"
+                placeholder="0000.00.00"
+                type="date"/>
+            </label></br>
+    
+            <label>
+                Пол:</br>
+                <input type="radio" checked="checked"
+                name="radio-group-1" value="Значение1"/>
+                Мужской
+            </label></br>
+            <label>
+                <input type="radio" checked="checked"
+                name="radio-group-1" value="Значение1"/>
+                Женский
+            </label></br>
+    
+            <label>
+                Выберите любимый язык программирования<br />
+                <select name="field-name-4[]" multiple="multiple">
+                    <option value="Pascal">Pascal</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                </select><br />
+            </label>
+            
+            <label>
+                Биография<br />
+                <textarea name="field-name-2">Напишите о себе</textarea>
+            </label><br />
+            
+        
+            с контрактом ознакомлен (а)<br />
+            <label><input type="checkbox" checked="checked"
+              name="check" />
+              Подпись чекбокса ставим справа
+            </label><br />
+    
+            <input type="submit" value="Сохранить и отправить"/></form>
+    
+    
+        </form>    
 
         <h2><a id="О_странице"></a> О странице:</h2>
         <h3>Страница была создана студентом КубГУ Рубан Никитой Максимовичем</h3>
