@@ -1,0 +1,117 @@
+header {
+    background-image: url('head_image.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-align: left;
+    padding:60px;
+    color: white;
+    border-bottom: 2px solid #333;
+}
+
+#link_with_distance {
+    margin-right: 50px;
+    float: left;
+}
+
+#head_text_size {
+    font-size: 50px;
+}
+
+.logo {
+    float: left;
+    margin-right: 70px;
+    margin-top: -5px;   
+}
+
+th {
+    color: white;
+    font-size: 30px;
+}
+td {
+    color: white;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+}
+label {
+    color: white;
+}
+li {
+    color: #7266fa;
+}
+#big_text {
+    font-size: 49px;
+}
+
+a {
+    color: #7266fa; 
+    text-decoration: none; 
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+footer {
+  background-color: #7266fa;
+   right: 0;
+   bottom: 0;
+   text-align: center; 
+   width: 100%;   
+   font-size: 19px;
+    font-weight: bold;
+  color: #fafaff;  
+ }
+
+/* Это было удобнее сделать в отдельном файле .css*/
+h2 {
+     margin-bottom: 0;
+/* Убрал нижний отступ у h2 */
+}
+
+h3 {
+    margin-top: 0;
+/* Убрал верхний отступ у h3 */
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+a {
+    font-size: 25px;
+}
+
+ol {
+    font-size: 25px;
+}
+
+
+
+/*Цвета ячеек*/
+.cellpurple {
+    background-color: #7266fa;
+}
+
+.cellwgray {
+    background-color: #8a8a8a;
+}
+        

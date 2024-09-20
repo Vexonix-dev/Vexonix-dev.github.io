@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+
+</head>
+
+<body> 
+
+    <header>
+    <img src="VX_logo.png" alt="Тут должно быть лого" class = "logo">
+    <h1 id="head_text_size">Vexonix</h1>
+    <nav>
+        <a href="#home" id="link_with_distance">Главная страница</a>
+        <a href="#about" id="link_with_distance">О нас</a>
+        <a href="#contact" id="link_with_distance">Контакты</a>
+    </nav>
+    </header>
+
+    <div style="max-width: 960px; background-color: #1c1c1c; margin: 0 auto; margin-top:20px; padding: 10px;"> <!--Оформление-->
+
+        <h1>Vexonix Page</h1><br>
+        <a href="http://kubsu.ru">Абсолютная гиперссылка на глав. страницу КубГУ</a><br>
+        <a href="https://kubsu.ru">Абсолютная гиперссылка на глав. страницу КубГУ (https)</a><br>
+        <a href="image.html" target="_blank"><img src="image.jpg" alt="Здесь должен быть цветочек" width="500"><br></a> 
+        <a href="./internal_page.html">Сокращенная ссылка на внутреннюю страницу</a><br>
+        <a href="#О_странице"> О странице (ссылка на фрагмент текущей страницы)</a><br>
+        <a href="index.html?objdect=ring&material=silver&diameter=50">Кольцо (ссылка с тремя параметрами)</a><br>
+        <a href="current%20directory.html?id=12345">Ссылка с параметром ID в URL</a><br>
+        <a href="current%20directory.html">Относительная ссылка на страницу в текущем каталоге</a><br>
+        <a href="about/about%20directory.html">Относительная ссылка на страницу в каталоге about</a><br>
+        <a href="other/info/info.html">Ссылка на страницу, которая находится в каталоге двумя уровнями ниже</a>
+    
+        <h2>
+            Вам заинтересовались Кубанским Государственным Университетом?<br>
+            Предлагаю вам посетить <a href="https://kubsu.ru">главную страницу университета</a> для того, <br>
+            чтобы узнать больше информации о ВУЗе!
+        </h2><br>
+    
+        <!--Ссылка на фрагмент страницы стороннего сайта-->
+        <a href="https://en.wikipedia.org/wiki/Computer#History">История возникновения компьютеров</a><br>
+    
+        <img src="circleandrect.png" width="500" height="281" alt="circle and rectangle image" usemap="#CaR">
+        <map name="CaR">
+            <area shape="rect" coords="20,64,255,214" href="https://www.kubsu.ru/ru/abiturient" target="_blank"
+                alt="Ссылка в квадрате">
+            <area shape="circle" coords="375,141,100" href="https://cube.nlabs.su/welcome" target="_blank"
+                alt="Ссылка на круг">
+        </map><br>
+    
+        <a href="" onclick="return false;">Ссылка с пустым href</a><br>
+        <a onclick="alert('Здравствуйте! Вы нажали на ссылку без href.')">Ссылка без href (сюда можно нажать)</a><br>
+    
+        <a href="http://kubsu.ru" rel="nofollow">Ссылка, по которой запрещён переход посковикам</a>
+    
+        <h2>Небольшая навигация по сайту КубГУ (нумерованный список ссылок с подписями)</h2>
+        <!--Нумерованный список ссылок с подписями title-->
+        <ol>
+            <li><a href="https://www.kubsu.ru/ru/university" title="Перейти на сайт с информацией о КубГУ" 
+                target="_blank">Информация</a></li>
+            <li><a href="https://www.kubsu.ru/ru/education" title="Перейти на сайт с информацией по-поводу обучения в КубГУ" 
+                target="_blank">Образование</a></li>
+            <li><a href="https://www.kubsu.ru/ru/abiturient" title="Перейти на сайт с информацией для абитуриентов КубГУ" 
+                target="_blank">Для абитуриентов</a></li>
+        </ol>
+    
+        <!--Ссылка на файл на сервере FTP с авторизацией-->
+        <a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a>
+
+    </div>
+
+
+    <!-- ТАБЛИЦА -->
+    <div style="max-width: 960px; background-color: #1c1c1c; margin: 0 auto; margin-top:20px; padding: 10px;">
+        <h1>Таблица</h1>
+        <table border = "1">
+            <thead>
+                <tr>
+                    <th class = cellwgray>Заголовок 1</th>
+                    <th class = cellwgray>Заголовок 2</th>
+                    <th class = cellwgray>Заголовок 3</th>
+                    <th class = cellwgray>Заголовок 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!--Строка 1 и т д-->
+                    <td class = cellpurple>Ячейка 1.1</td>
+                    <td class = cellpurple>Ячейка 1.2</td>
+                    <td class = cellpurple>Ячейка 1.3</td>
+                    <td class = cellpurple>Ячейка 1.4</td>
+                </tr>
+    
+                <tr>
+                    <td class = cellwgray>Ячейка 2.1</td>
+                    <td class = cellwgray>Ячейка 2.2</td>
+                    <td class = cellwgray>Ячейка 2.3</td>
+                    <td class = cellwgray>Ячейка 2.4</td>
+                </tr>
+
+                <tr>
+                    <td class = cellpurple>Ячейка 3.1</td>
+                    <td class = cellpurple>Ячейка 3.2</td>
+                    <td class = cellpurple>Ячейка 3.3</td>
+                    <td class = cellpurple>Ячейка 3.4</td>
+                </tr>
+
+                <tr>
+                    <td class = cellwgray>Ячейка 4.1</td>
+                    <td class = cellwgray>Ячейка 4.2</td>
+                    <td class = cellwgray>Ячейка 4.3</td>
+                    <td class = cellwgray>Ячейка 4.4</td>
+                </tr>
+
+                <tr>
+                    <td class = cellpurple>Ячейка 5.1</td>
+                    <td class = cellpurple>чейка 5.2</td>
+                    <td class = cellpurple>Ячейка 5.3</td>
+                    <td class = cellpurple>Ячейка 5.4</td>
+                </tr>
+
+                <tr>
+                    <td class = cellwgray>Ячейка 6.1</td>
+                    <td colspan = "2", class = cellwgray>Объединённая ячейка 6.2 и 6.3</td>
+                    <td class = cellwgray>Ячейка 6.4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <!-- Форма HTML -->
+    <div style="max-width: 960px; background-color: #1c1c1c; margin: 0 auto; margin-top:20px; padding: 10px;">
+        <h1>Форма HTML</h1>
+
+        <form action = "URL_Отправки_данных" method="POST">
+                
+            <label>
+                Фамилия Имя Отчество<br/>
+                <input type="text" 
+                placeholder="ФИО">
+            </label><br/>
+        
+                <label>
+                    Номер телефона<br/>
+                    <input type="tel" 
+                    placeholder="+7(___)___-__-__">
+                </label><br/>
+        
+                <label>
+                    E-mail<br/>
+                    <input type="email" 
+                    placeholder="e-mail"
+                    type="email">
+                </label><br/>
+        
+                <label>
+                    Дата:</br>
+                    <input name="date"
+                    placeholder="0000.00.00"
+                    type="date"/>
+                </label></br>
+        
+                <label>
+                    Пол:</br>
+                    <input type="radio" checked="checked"
+                    name="radio-group-1" value="Значение1"/>
+                    Мужской
+                </label></br>
+                <label>
+                    <input type="radio" checked="checked"
+                    name="radio-group-1" value="Значение1"/>
+                    Женский
+                </label></br>
+        
+                <label>
+                    Выберите любимый язык программирования<br />
+                    <select name="field-name-4[]" multiple="multiple">
+                        <option value="Pascal">Pascal</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Prolog</option>
+                        <option value="Scala">Scala</option>
+                    </select><br />
+                </label>
+                
+                <label>
+                    Биография<br />
+                    <textarea name="field-name-2">Напишите о себе</textarea>
+                </label><br />
+                
+            
+                с контрактом ознакомлен (а)<br />
+                <label><input type="checkbox" checked="checked"
+                  name="check" />
+                  Подпись чекбокса ставим справа
+                </label><br />
+        
+                <input type="submit" value="Сохранить и отправить"/></form>
+        
+        
+            </form>  
+    </div>  
+
+    <footer>
+        <h2><a id="О_странице"></a> О странице:</h2>
+        <h3>Страница была создана студентом КубГУ Рубан Никитой Максимовичем</h3>
+    </footer>
+
+</body>
+
+</html>
