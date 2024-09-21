@@ -1,12 +1,8 @@
 header {
-    background-image: url('head_image.png'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
     text-align: left;
     padding:60px;
-    color: white;
-    border-bottom: 2px solid #333;
+    background-color: rgb(30, 30, 30);
+    border-bottom: 2px solid #7266fa;
 }
 
 #link_with_distance {
@@ -33,7 +29,7 @@ td {
 }
 
 body {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(40, 40, 40);
 }
 
 h1 {
@@ -63,8 +59,6 @@ a {
 body {
     font-family: 'Nunito', sans-serif;
 }
-
-
 
 footer {
   background-color: #7266fa;
@@ -103,8 +97,6 @@ a {
 ol {
     font-size: 25px;
 }
-
-
 
 /*Цвета ячеек*/
 .cellpurple {
