@@ -1,0 +1,156 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+    border-bottom: 2px solid #7266fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header img.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav a {
+    display: block;
+    padding: 10px;
+    color: #7266fa;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+header nav a:hover {
+    background-color: #7266fa;
+    color: white;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #1c1c1c;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.table-container {
+    order: -1;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #7266fa;
+}
+
+.cellpurple {
+    background-color: #7266fa;
+}
+
+.cellwgray {
+    background-color: #8a8a8a;
+}
+
+.links-container {
+    margin: 20px 0;
+}
+
+.links-container a {
+    color: #7266fa;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.links-container a:hover {
+    color: #fafaff;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #7266fa;
+    color: #fafaff;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    header img.logo {
+        width: 120px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    header nav a {
+        display: inline-block;
+        font-size: 18px;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links-container {
+        order: 1;
+    }
+
+    .table-container {
+        order: 2;
+    }
+
+    .form-section {
+        order: 3;
+    }
+
+    .responsive-img {
+        max-width: 500px;
+    }
+}
