@@ -1,0 +1,284 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+    border-bottom: 2px solid #7266fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header img.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav a {
+    display: block;
+    padding: 10px;
+    color: #7266fa;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+header nav a:hover {
+    background-color: #7266fa;
+    color: white;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #1c1c1c;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.table-container {
+    order: -1;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #7266fa;
+}
+
+.cellpurple {
+    background-color: #7266fa;
+}
+
+.cellwgray {
+    background-color: #8a8a8a;
+}
+
+.links-container {
+    margin: 20px 0;
+}
+
+.links-container a {
+    color: #7266fa;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.links-container a:hover {
+    color: #fafaff;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #7266fa;
+    color: #fafaff;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    header img.logo {
+        width: 120px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    header nav a {
+        display: inline-block;
+        font-size: 18px;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links-container {
+        order: 1;
+    }
+
+    .table-container {
+        order: 2;
+    }
+
+    .form-section {
+        order: 3;
+    }
+
+    .responsive-img {
+        max-width: 500px;
+    }
+}
+
+
+/* Оформление контейнера калькулятора */
+.calculator {
+    background-color: #d5d5d5; /* светло-серый фон */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовок калькулятора */
+.calculator h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Поля ввода и выбора */
+.calculator input[type="number"],
+.calculator select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #2f2f2f;
+    border-radius: 4px;
+    color: #333;
+}
+
+/* Кнопка расчета */
+#calculateBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333; /* темный фон для кнопки */
+    color: #9e9e9e; /* светлый текст */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#calculateBtn:hover {
+    background-color: #474747; /* немного светлее при наведении */
+}
+
+/* Результат */
+#result {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Галерея */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+.gallery-slider-container {
+    overflow: hidden; 
+    width: 100%; 
+    position: relative;
+}
+
+.gallery-slider {
+    display: flex; 
+    transition: transform 0.5s ease-in-out; 
+}
+
+.gallery-slide {
+    display: flex; 
+}
+
+.gallery-image {
+    width: 300px; 
+    height: 200px; 
+    margin-right: 10px; 
+    flex-shrink: 0;
+}
+
+.arrow-left, .arrow-right {
+    background-color: #7266fa;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+/* Пейджер */
+.pager-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pager-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pager-dot.active {
+    background-color: #7266fa;
+}
